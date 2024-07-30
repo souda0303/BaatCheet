@@ -1,5 +1,4 @@
-
-# BaatCheet (Chat Application)
+# Chat Application
 
 A feature-rich chat application supporting personal and group chats, with the ability to send multiple photos or files.
 
@@ -63,13 +62,13 @@ Ensure you have the following installed:
 ### Steps
 
 1. **Clone the repository:**
-    \```sh
+    ```sh
     git clone https://github.com/your-username/chat-application.git
     cd chat-application
-    \```
+    ```
 
 2. **Install dependencies:**
-    \```sh
+    ```sh
     # Install server dependencies
     cd server
     npm install
@@ -77,10 +76,10 @@ Ensure you have the following installed:
     # Install client dependencies
     cd ../client
     npm install
-    \```
+    ```
 
 3. **Start the development server:**
-    \```sh
+    ```sh
     # Start the server
     cd server
     npm start
@@ -88,7 +87,7 @@ Ensure you have the following installed:
     # Start the client
     cd ../client
     npm start
-    \```
+    ```
 
 ## Usage
 
@@ -106,74 +105,31 @@ Ensure you have the following installed:
 
 - **Environment Variables:**
   Create a `.env` file in the `server` directory and add the following:
-    \```env
+    ```env
     PORT=5000
     MONGO_URI=your_mongodb_uri
     JWT_SECRET=your_jwt_secret
-    \```
+    ```
 
 ## Project Structure
 
-\```
+```plaintext
 chat-application/
-├── client/                   # React frontend
-│   ├── public/               # Public files
-│   └── src/                  # Source files
-│       ├── components/       # React components
-│       ├── pages/            # Page components
-│       ├── store/            # Zustand store
-│       └── utils/            # Utility functions
-├── server/                   # Express backend
-│   ├── config/               # Configuration files
-│   ├── controllers/          # Controller functions
-│   ├── middleware/           # Middleware functions
-│   ├── models/               # Mongoose models
-│   ├── routes/               # Express routes
-│   ├── sockets/              # Socket.IO handlers
-│   └── utils/                # Utility functions
-└── README.md                 # Project documentation
-\```
-
-## API Endpoints
-
-### Auth
-
-- **POST /api/auth/register**
-  - Register a new user
-- **POST /api/auth/login**
-  - Authenticate a user and return a token
-
-### Users
-
-- **GET /api/users**
-  - Get a list of all users
-- **GET /api/users/:id**
-  - Get a specific user by ID
-
-### Chats
-
-- **GET /api/chats**
-  - Get all chats for the logged-in user
-- **POST /api/chats**
-  - Create a new chat
-
-### Messages
-
-- **GET /api/messages/:chatId**
-  - Get all messages for a specific chat
-- **POST /api/messages**
-  - Send a new message
-
-## Contributing
-
-Contributions are welcome! Please follow these steps to contribute:
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Commit your changes (`git commit -m 'Add new feature'`).
-4. Push to the branch (`git push origin feature-branch`).
-5. Open a pull request.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+├── client/                   
+│   ├── public/              
+│   └── src/
+|       ├── assets/
+|       ├── components/         
+│       ├── context/
+|       ├── lib/ 
+│       ├── pages/           
+│       ├── store/          
+│       └── utils/            
+├── server/                
+│   ├── config/               
+│   ├── controllers/          
+│   ├── middleware/          
+│   ├── models/              
+│   ├── routes/
+|   ├── uploads/                          
+└── README.md                 
