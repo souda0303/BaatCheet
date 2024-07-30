@@ -1,4 +1,4 @@
-# Chat Application
+# (BaatCheet) Chat Application
 
 A feature-rich chat application supporting personal and group chats, with the ability to send multiple photos or files.
 
